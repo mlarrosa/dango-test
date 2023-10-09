@@ -98,13 +98,33 @@
 			padding: 100px 0;
 		}
 
+		
 		.autofill {
 			width: 60vw;
 			margin-top: 4%;
 			display: grid;
 			gap: 15px;
-			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			grid-template-columns: 1fr 1fr 1fr 1fr;
 		}
+
+
+        @media only screen and (max-width:1400px) {
+            .autofill {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        @media only screen and (max-width:1100px) {
+            .autofill {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media only screen and (max-width:720px) {
+            .autofill {
+                grid-template-columns: 1fr;
+            }
+        }
 	</style>
 </head>
 
